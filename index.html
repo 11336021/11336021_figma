@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <!-- RWD 必備：手機才不會整頁縮小 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LPTDIVING - Home</title>
+
+  <!-- 外部 CSS（符合課堂規範） -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- ========== header：上方導覽列 ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- LOGO 區：左 icon + 品牌字 -->
+      <a class="brand" href="index.html">
+        <!-- 圖片先用示意路徑，你之後換成切圖 -->
+        <img class="brand-icon" src="images/logo.png" alt="LPTDIVING logo" />
+        <span class="brand-name">LPTDIVING</span>
+      </a>
+
+      <!-- nav：選單（置中） -->
+      <nav class="site-nav" aria-label="主選單">
+        <ul class="nav-list">
+          <li><a href="articles-1.html">Diving Articles</a></li>
+          <li><a href="#spots">Diving Spots</a></li>
+          <li><a href="#gear">Diving Gears</a></li>
+          <li><a href="#about">About us</a></li>
+        </ul>
+      </nav>
+
+      <!-- 右上角 CTA 按鈕 -->
+      <a class="btn btn--join" href="join.html">Join Us</a>
+    </div>
+  </header>
+
+  <!-- ========== main：主要內容 ========== -->
+  <main>
+    <!-- hero：大圖背景 + 文字置中（用背景圖 + 漸層遮罩模擬） -->
+    <section class="hero" aria-label="主視覺">
+      <div class="container hero-inner">
+        <h1 class="hero-title">Into the Blue: My Green Island Dive Journal</h1>
+        <p class="hero-subtitle">
+          Discover the magic beneath the waves — dive, explore, and protect the ocean we love.
+        </p>
+        <a class="btn btn--primary" href="articles-1.html">Read More</a>
+      </div>
+    </section>
+
+    <!-- Latest Articles：三張文章卡片 -->
+    <section class="section" id="latest">
+      <div class="container">
+        <h2 class="section-title">Latest Articles</h2>
+
+        <!-- 卡片列：用 Flex 三欄 -->
+        <div class="card-row">
+          <article class="card">
+            <img class="card-img" src="images/IMG_0519.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Magical Moments with Sea Turtles</h3>
+              <p class="card-text">
+                Discover the vibrant underwater world of Green Island and experience an unforgettable...
+              </p>
+              <a class="card-link" href="articles-1.html">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/IMG_0719.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Blue Depth Journey</h3>
+              <p class="card-text">
+                Immerse yourself in the serenity of Green Island’s ocean floor, where rays...
+              </p>
+              <a class="card-link" href="articles-1.html">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/IMG_0734.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Peaceful Freedom in the Deep Blue</h3>
+              <p class="card-text">
+                In the tranquil depths of Green Island, feel the calm and freedom that only diving can...
+              </p>
+              <a class="card-link" href="articles-1.html">Read More</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diving Spots：四張大圖卡（底部文字覆蓋） -->
+    <section class="section" id="spots">
+      <div class="container">
+        <h2 class="section-title">Diving Spots</h2>
+
+        <div class="spot-row">
+          <article class="spot-card">
+            <img class="spot-img" src="images/P9125235.JPG" alt="Moai Statue Dive Site" />
+            <div class="spot-overlay">
+              <h3 class="spot-title">Moai Statue Dive Site</h3>
+              <p class="spot-meta">Taiwan, Green Island</p>
+            </div>
+          </article>
+
+          <article class="spot-card">
+            <img class="spot-img" src="images/P9125263.JPG" alt="Underwater Mailbox" />
+            <div class="spot-overlay">
+              <h3 class="spot-title">Underwater Mailbox</h3>
+              <p class="spot-meta">Taiwan, Green Island</p>
+            </div>
+          </article>
+
+          <article class="spot-card">
+            <img class="spot-img" src="images/IMG_20250914_155543_584.jpg" alt="Time Tunnel Dive" />
+            <div class="spot-overlay">
+              <h3 class="spot-title">Time Tunnel Dive</h3>
+              <p class="spot-meta">Taiwan, Green Island</p>
+            </div>
+          </article>
+
+          <article class="spot-card">
+            <img class="spot-img" src="images/IMG_20250914_155719_683.jpg" alt="Cathedral Dive Site" />
+            <div class="spot-overlay">
+              <h3 class="spot-title">Cathedral Dive Site</h3>
+              <p class="spot-meta">Taiwan, Green Island</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gear：左圖右文（Flex 兩欄） -->
+    <section class="section section--tight" id="gear">
+      <div class="container gear-inner">
+        <div class="gear-media">
+          <img class="gear-img" src="images/IMG_2099.jpeg" alt="Diving gear" />
+        </div>
+
+        <div class="gear-text">
+          <h2 class="gear-title">2025 Best Diving Gear</h2>
+          <p class="gear-paragraph">
+            Welcome to the new era of diving in 2025! This year's top gear perfectly blends three major trends:
+            "Smart Tech," "Light Travel," and "Sustainability."
+          </p>
+          <p class="gear-paragraph">
+            From smart dive computers with integrated GPS to ultra-light, packable travel BCDs and wetsuits made from
+            eco-friendly materials. We've selected revolutionary gear that balances professional performance, convenience,
+            and environmental consciousness. Explore the latest trends now and upgrade your next dive experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us：公司介紹區域 -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <h2 class="section-title">About us</h2>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <div class="about-intro">
+              <h3 class="about-subtitle">Dive into Adventure with LPTDIVING</h3>
+              <p class="about-paragraph">
+                At LPTDIVING, we are passionate explorers of the underwater world, dedicated to sharing the magic 
+                and wonder of Taiwan's pristine diving destinations. Founded by diving enthusiasts who fell in love 
+                with Green Island's crystal-clear waters, we've made it our mission to guide fellow adventurers to 
+                discover the breathtaking beauty beneath the waves.
+              </p>
+            </div>
+            
+            <div class="about-values">
+              <div class="value-item">
+                <div class="value-icon">
+                  <img src="images/wave.png" alt="Ocean Conservation" style="width: 32px; height: 32px;">
+                </div>
+                <div class="value-content">
+                  <h4 class="value-title">Ocean Conservation</h4>
+                  <p class="value-text">We believe in protecting marine ecosystems for future generations through responsible diving practices.</p>
+                </div>
+              </div>
+              
+              <div class="value-item">
+                <div class="value-icon">
+                  <img src="images/life-buoy.png" alt="Marine Life Protection" style="width: 32px; height: 32px;">
+                </div>
+                <div class="value-content">
+                  <h4 class="value-title">Marine Life Protection</h4>
+                  <p class="value-text">Every dive is an opportunity to witness and preserve the incredible biodiversity of our oceans.</p>
+                </div>
+              </div>
+              
+              <div class="value-item">
+                <div class="value-icon">
+                  <img src="images/diving.png" alt="Adventure & Education" style="width: 32px; height: 32px;">
+                </div>
+                <div class="value-content">
+                  <h4 class="value-title">Adventure & Education</h4>
+                  <p class="value-text">We combine thrilling underwater adventures with educational content to inspire ocean stewardship.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== footer：頁尾（深藍底） ========== -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <p class="footer-brand-title">LPTDIVING</p>
+        <p class="footer-desc">Explore the deep sea and share the wonders beneath the waves.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <p class="footer-col-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="articles-1.html">Diving Articles</a></li>
+            <li><a href="#spots">Diving Spots</a></li>
+            <li><a href="#gear">Diving Gears</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="join.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 LPTDIVING</span>
+    </div>
+  </footer>
+</body>
+</html>

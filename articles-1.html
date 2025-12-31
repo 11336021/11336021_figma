@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LPTDIVING - All Articles</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- header：與首頁共用（選單目前頁加 active） -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-icon" src="images/logo.png" alt="LPTDIVING logo" />
+        <span class="brand-name">LPTDIVING</span>
+      </a>
+
+      <nav class="site-nav" aria-label="主選單">
+        <ul class="nav-list">
+          <li><a class="active" href="articles-1.html">Diving Articles</a></li>
+          <li><a href="index.html#spots">Diving Spots</a></li>
+          <li><a href="index.html#gear">Diving Gears</a></li>
+          <li><a href="index.html#about">About us</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--join" href="join.html">Join Us</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- 置中標題區（All Articles） -->
+    <section class="page-title">
+      <div class="container page-title-inner">
+        <h1 class="page-title-text">All Articles</h1>
+        <p class="page-subtitle">Explore our latest stories, tips, and guides from the deep.</p>
+      </div>
+    </section>
+
+    <!-- 文章卡片網格（Flex + wrap） -->
+    <section class="section section--no-top">
+      <div class="container">
+        <div class="card-grid">
+          <!-- 一張卡片（以下可複製貼上，照 Figma 張數放） -->
+          <article class="card">
+            <img class="card-img" src="images/IMG_0519.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Magical Moments with Sea Turtles</h3>
+              <p class="card-text">Discover the vibrant underwater world of Green Island and experience an unforgettable...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/IMG_0719.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Blue Depth Journey</h3>
+              <p class="card-text">Immerse yourself in the serenity of Green Island’s ocean floor, where rays...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/IMG_0734.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Peaceful Freedom in the Deep Blue</h3>
+              <p class="card-text">In the tranquil depths of Green Island, feel the calm and freedom that only diving can...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/IMG_0758.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Dive Buddies Beneath the Blue</h3>
+              <p class="card-text">Feel the joy of friendship and teamwork under the sea — where every dive becomes...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/IMG_20250914_160050_470.jpg" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Colors of the Coral Reef</h3>
+              <p class="card-text">Discover a vibrant underwater world alive with movement, where every coral and fish...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/IMG_20250914_161036_117.jpg" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Setting Sail for Adventure</h3>
+              <p class="card-text">The journey begins above the waves — ready your gear, feel the breeze, and...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/IMG_20250914_161507_596.jpg" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Garden of the Sea</h3>
+              <p class="card-text">Explore the living tapestry of the reef, a breathtaking underwater...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/P9125235.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Light Through the Cave</h3>
+              <p class="card-text">Swim through the glowing passage where sunlight meets the sea — a hidden...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-img" src="images/P9125263.JPG" alt="Article cover" />
+            <div class="card-body">
+              <h3 class="card-title">Connection in the Deep</h3>
+              <p class="card-text">Underwater, words fade — but a single gesture says it all. Trust, respect, and...</p>
+              <a class="card-link" href="#">Read More</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- pagination：頁碼（純 HTML/CSS，符合課堂） -->
+        <nav class="pagination" aria-label="分頁">
+          <a class="page-btn disabled" aria-label="previous">«</a>
+          <a class="page-num active" href="articles-1.html">1</a>
+          <a class="page-num" href="articles-2.html">2</a>
+          <a class="page-btn" href="articles-2.html" aria-label="next">»</a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer：與首頁共用 -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <p class="footer-brand-title">LPTDIVING</p>
+        <p class="footer-desc">Explore the deep sea and share the wonders beneath the waves.</p>
+      </div>
+
+      <div class="footer-cols">
+        <div class="footer-col">
+          <p class="footer-col-title">Explore</p>
+          <ul class="footer-links">
+            <li><a href="articles-1.html">Diving Articles</a></li>
+            <li><a href="index.html#spots">Diving Spots</a></li>
+            <li><a href="index.html#gear">Diving Gears</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <p class="footer-col-title">Company</p>
+          <ul class="footer-links">
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="join.html">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2025 LPTDIVING</span>
+    </div>
+  </footer>
+</body>
+</html>
