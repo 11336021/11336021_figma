@@ -9,11 +9,6 @@
 - 聯絡表單
 - 關於我們專區
 
-## 🛠 使用技術
-- HTML5
-- CSS3 (Flexbox, Grid, Custom Properties)
-- Responsive Web Design
-
 ## 🌐 線上展示
 訪問網站：https://11336021.github.io/11336021_figma/
 
