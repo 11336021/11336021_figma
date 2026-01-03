@@ -2,26 +2,21 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <!-- RWD 必備：手機才不會整頁縮小 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LPTDIVING - Home</title>
 
-  <!-- 外部 CSS（符合課堂規範） -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <!-- ========== header：上方導覽列 ========== -->
+  <!-- header -->
   <header class="site-header">
     <div class="container header-inner">
-      <!-- LOGO 區：左 icon + 品牌字 -->
       <a class="brand" href="index.html">
-        <!-- 圖片先用示意路徑，你之後換成切圖 -->
         <img class="brand-icon" src="images/logo.png" alt="LPTDIVING logo" />
         <span class="brand-name">LPTDIVING</span>
       </a>
 
-      <!-- nav：選單（置中） -->
       <nav class="site-nav" aria-label="主選單">
         <ul class="nav-list">
           <li><a href="articles-1.html">Diving Articles</a></li>
@@ -31,14 +26,11 @@
         </ul>
       </nav>
 
-      <!-- 右上角 CTA 按鈕 -->
       <a class="btn btn--join" href="join.html">Join Us</a>
     </div>
   </header>
 
-  <!-- ========== main：主要內容 ========== -->
   <main>
-    <!-- hero：大圖背景 + 文字置中（用背景圖 + 漸層遮罩模擬） -->
     <section class="hero" aria-label="主視覺">
       <div class="container hero-inner">
         <h1 class="hero-title">Into the Blue: My Green Island Dive Journal</h1>
@@ -49,15 +41,13 @@
       </div>
     </section>
 
-    <!-- Latest Articles：三張文章卡片 -->
     <section class="section" id="latest">
       <div class="container">
         <h2 class="section-title">Latest Articles</h2>
 
-        <!-- 卡片列：用 Flex 三欄 -->
         <div class="card-row">
           <article class="card">
-            <img class="card-img" src="images/IMG_0519.JPG" alt="Article cover" />
+            <img class="card-img" src="images/IMG_0519.JPG" alt="Diver swimming with sea turtle in Green Island waters" />
             <div class="card-body">
               <h3 class="card-title">Magical Moments with Sea Turtles</h3>
               <p class="card-text">
@@ -68,7 +58,7 @@
           </article>
 
           <article class="card">
-            <img class="card-img" src="images/IMG_0719.JPG" alt="Article cover" />
+            <img class="card-img" src="images/IMG_0719.JPG" alt="Diver exploring deep blue waters with schools of fish" />
             <div class="card-body">
               <h3 class="card-title">Blue Depth Journey</h3>
               <p class="card-text">
@@ -79,7 +69,7 @@
           </article>
 
           <article class="card">
-            <img class="card-img" src="images/IMG_0734.JPG" alt="Article cover" />
+            <img class="card-img" src="images/IMG_0734.JPG" alt="Diver floating peacefully in deep blue ocean" />
             <div class="card-body">
               <h3 class="card-title">Peaceful Freedom in the Deep Blue</h3>
               <p class="card-text">
@@ -92,14 +82,13 @@
       </div>
     </section>
 
-    <!-- Diving Spots：四張大圖卡（底部文字覆蓋） -->
     <section class="section" id="spots">
       <div class="container">
         <h2 class="section-title">Diving Spots</h2>
 
         <div class="spot-row">
           <article class="spot-card">
-            <img class="spot-img" src="images/P9125235.JPG" alt="Moai Statue Dive Site" />
+            <img class="spot-img" src="images/P9125235.JPG" alt="Moai statue underwater diving site in Green Island" />
             <div class="spot-overlay">
               <h3 class="spot-title">Moai Statue Dive Site</h3>
               <p class="spot-meta">Taiwan, Green Island</p>
@@ -107,7 +96,7 @@
           </article>
 
           <article class="spot-card">
-            <img class="spot-img" src="images/P9125263.JPG" alt="Underwater Mailbox" />
+            <img class="spot-img" src="images/P9125263.JPG" alt="Underwater mailbox diving spot in Green Island" />
             <div class="spot-overlay">
               <h3 class="spot-title">Underwater Mailbox</h3>
               <p class="spot-meta">Taiwan, Green Island</p>
@@ -115,7 +104,7 @@
           </article>
 
           <article class="spot-card">
-            <img class="spot-img" src="images/IMG_20250914_155543_584.jpg" alt="Time Tunnel Dive" />
+            <img class="spot-img" src="images/IMG_20250914_155543_584.jpg" alt="Time tunnel dive site with light rays" />
             <div class="spot-overlay">
               <h3 class="spot-title">Time Tunnel Dive</h3>
               <p class="spot-meta">Taiwan, Green Island</p>
@@ -123,7 +112,7 @@
           </article>
 
           <article class="spot-card">
-            <img class="spot-img" src="images/IMG_20250914_155719_683.jpg" alt="Cathedral Dive Site" />
+            <img class="spot-img" src="images/IMG_20250914_155719_683.jpg" alt="Cathedral dive site with sunlight penetrating water" />
             <div class="spot-overlay">
               <h3 class="spot-title">Cathedral Dive Site</h3>
               <p class="spot-meta">Taiwan, Green Island</p>
@@ -133,11 +122,10 @@
       </div>
     </section>
 
-    <!-- Gear：左圖右文（Flex 兩欄） -->
     <section class="section section--tight" id="gear">
       <div class="container gear-inner">
         <div class="gear-media">
-          <img class="gear-img" src="images/IMG_2099.jpeg" alt="Diving gear" />
+          <img class="gear-img" src="images/P9125270.JPG" alt="2025 best diving gear equipment" />
         </div>
 
         <div class="gear-text">
@@ -155,7 +143,6 @@
       </div>
     </section>
 
-    <!-- About us：公司介紹區域 -->
     <section class="section about-section" id="about">
       <div class="container">
         <h2 class="section-title">About us</h2>
@@ -175,7 +162,7 @@
             <div class="about-values">
               <div class="value-item">
                 <div class="value-icon">
-                  <img src="images/wave.png" alt="Ocean Conservation" style="width: 32px; height: 32px;">
+                  <img src="images/wave.png" alt="Ocean conservation icon">
                 </div>
                 <div class="value-content">
                   <h4 class="value-title">Ocean Conservation</h4>
@@ -185,7 +172,7 @@
               
               <div class="value-item">
                 <div class="value-icon">
-                  <img src="images/life-buoy.png" alt="Marine Life Protection" style="width: 32px; height: 32px;">
+                  <img src="images/life-buoy.png" alt="Marine life protection icon">
                 </div>
                 <div class="value-content">
                   <h4 class="value-title">Marine Life Protection</h4>
@@ -195,7 +182,7 @@
               
               <div class="value-item">
                 <div class="value-icon">
-                  <img src="images/diving.png" alt="Adventure & Education" style="width: 32px; height: 32px;">
+                  <img src="images/diving.png" alt="Adventure and education icon">
                 </div>
                 <div class="value-content">
                   <h4 class="value-title">Adventure & Education</h4>
@@ -209,7 +196,7 @@
     </section>
   </main>
 
-  <!-- ========== footer：頁尾（深藍底） ========== -->
+  <!-- footer -->
   <footer class="site-footer">
     <div class="container footer-top">
       <div class="footer-brand">
